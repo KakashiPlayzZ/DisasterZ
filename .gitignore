@@ -1,0 +1,51 @@
+# Gradle build artifacts and caches
+.gradle/
+build/
+
+# Maven build artifacts
+target/
+
+# Java class files
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# Ensure Gradle wrapper jar is tracked
+!gradle/wrapper/gradle-wrapper.jar
+
+# Virtual Machine Crash Logs
+hs_err_pid*
+replay_pid*
+
+# IntelliJ IDEA
+.idea/
+*.iml
+*.iws
+*.ipr
+out/
+
+# Eclipse
+.project
+.classpath
+.settings/
+bin/
+
+# Visual Studio Code
+.vscode/
+
+# Operating System Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs and Run Output
+logs/
+run/
+*.log

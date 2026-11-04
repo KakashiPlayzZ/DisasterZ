@@ -1,0 +1,132 @@
+# ==============================================================================
+#                                DISASTERZ
+#              Enterprise Natural Disaster System for Minecraft
+#                           Developed by KakashiPlayz
+#                      Portfolio: https://kakashiplayz.vercel.app
+#                      Discord:   https://discord.gg/QdTN4BFkTv
+# ==============================================================================
+
+settings:
+  # Automated Disaster Scheduler Cycle
+  auto-scheduler:
+    enabled: true
+    # Interval between automatic disaster cycles in seconds (e.g. 3600 = 1 hour)
+    interval-seconds: 3600
+    # Pre-disaster warning countdown duration in seconds
+    warning-delay-seconds: 30
+    # Minimum online players required for automated disaster triggers
+    minimum-players: 1
+
+  # Worlds where disasters will NEVER occur or affect blocks
+  disabled-worlds:
+    - "world_the_end"
+
+  # Third-Party Land Protection & Claim Hooks
+  # Automatically detects WorldGuard, GriefPrevention, Towny, and Lands.
+  protection:
+    respect-claims: true
+
+  # Memory-Safe Block Restoration Engine (Zero-TPS-Drop Standard)
+  block-restoration:
+    enabled: true
+    # How many modified blocks are restored per server tick (e.g. 25-50 prevents lag spikes)
+    blocks-per-tick: 25
+    # When enabled, high-volume liquid events (Tsunami) send packet-based ghost blocks
+    # instead of true world mutations, delivering full visual intensity with zero block saves.
+    use-ghost-blocks-for-liquids: false
+
+# ==============================================================================
+#                          DISASTER CONFIGURATIONS
+# ==============================================================================
+
+disasters:
+  tsunami:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 10
+    bossbar:
+      color: "BLUE"
+      style: "PROGRESS"
+    mob-modifiers:
+      health-multiplier: 1.5
+      damage-multiplier: 1.2
+      speed-multiplier: 1.1
+
+  earthquake:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 12
+    bossbar:
+      color: "YELLOW"
+      style: "PROGRESS"
+    mob-modifiers:
+      health-multiplier: 2.0
+      damage-multiplier: 1.5
+      speed-multiplier: 1.2
+
+  tornado:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 10
+    bossbar:
+      color: "WHITE"
+      style: "PROGRESS"
+    mob-modifiers:
+      health-multiplier: 1.8
+      damage-multiplier: 1.3
+      speed-multiplier: 1.3
+
+  blizzard:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 10
+    bossbar:
+      color: "BLUE"
+      style: "NOTCHED_20"
+    mob-modifiers:
+      health-multiplier: 2.0
+      damage-multiplier: 1.4
+      speed-multiplier: 1.2
+
+  volcano:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 8
+    bossbar:
+      color: "RED"
+      style: "PROGRESS"
+    mob-modifiers:
+      health-multiplier: 2.5
+      damage-multiplier: 1.6
+      speed-multiplier: 1.2
+
+  meteor_shower:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 8
+    bossbar:
+      color: "RED"
+      style: "NOTCHED_10"
+    mob-modifiers:
+      health-multiplier: 2.2
+      damage-multiplier: 1.5
+      speed-multiplier: 1.2
+
+  zombie_apocalypse:
+    enabled: true
+    random-cycle-enabled: true
+    duration: 180
+    weight: 10
+    bossbar:
+      color: "PURPLE"
+      style: "PROGRESS"
+    mob-modifiers:
+      health-multiplier: 3.0
+      damage-multiplier: 1.8
+      speed-multiplier: 1.4

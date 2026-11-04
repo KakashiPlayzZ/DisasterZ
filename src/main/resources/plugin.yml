@@ -1,0 +1,45 @@
+name: DisasterZ
+version: '${version}'
+main: com.kakashiplayz.disasterz.DisasterZPlugin
+api-version: '1.21'
+author: KakashiPlayz
+website: https://kakashiplayz.vercel.app
+description: Enterprise Natural Disaster Architecture for Paper, Bukkit, and Spigot.
+softdepend:
+  - PlaceholderAPI
+  - WorldGuard
+  - GriefPrevention
+  - Towny
+  - Lands
+
+commands:
+  disasterz:
+    description: Master command for DisasterZ natural disaster management.
+    permission: disasterz.use
+    usage: /disasterz <gui|start|stop|reload|info>
+
+permissions:
+  disasterz.use:
+    description: Allows viewing plugin information and status.
+    default: true
+  disasterz.admin:
+    description: Full administrative control over DisasterZ.
+    default: op
+    children:
+      disasterz.admin.gui: true
+      disasterz.admin.start: true
+      disasterz.admin.stop: true
+      disasterz.admin.reload: true
+  disasterz.admin.gui:
+    description: Allows opening the DisasterZ Master Control GUI.
+    default: op
+  disasterz.admin.start:
+    description: Allows manually triggering natural disasters.
+    default: op
+  disasterz.admin.stop:
+    description: Allows stopping active disasters and warnings.
+    default: op
+  disasterz.admin.reload:
+    description: Allows reloading configuration files.
+    default: op
+

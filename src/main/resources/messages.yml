@@ -1,0 +1,30 @@
+# ==============================================================================
+#                                DISASTERZ
+#                            Message Dictionary
+#                   Fully supports Kyori Adventure MiniMessage
+#              and automatic legacy ampersand (&) color translation.
+#                           Developed by KakashiPlayz
+# ==============================================================================
+
+prefix: "<gradient:#ff5555:#aa0000><bold>DisasterZ</bold></gradient> <dark_gray>»</dark_gray> "
+
+bossbar-format: "<bold><red>%disaster_name%</red></bold> <gray>| Time Left: <yellow>%time_remaining%</yellow></gray>"
+
+warning-broadcast: "%prefix%<red><bold>Warning!</bold></red> A severe <yellow>%disaster%</yellow> is approaching in <red>%seconds%</red>s!"
+warning-actionbar: "<yellow>Disaster approaching in <red>%seconds%s</red>!"
+
+disaster-start-broadcast: "%prefix%<red><bold>%disaster%</bold></red> has struck the world! Duration: <yellow>%time%</yellow>"
+disaster-end-broadcast: "%prefix%<green>%disaster% has subsided. The world is safe once more.</green>"
+
+no-permission: "%prefix%<red>You do not have permission to execute this command.</red>"
+invalid-disaster: "%prefix%<red>Unknown disaster type '%name%'. Check /disasterz gui or tab completion.</red>"
+already-active: "%prefix%<red>A disaster or warning is already active! Stop it first with /disasterz stop.</red>"
+none-active: "%prefix%<yellow>No disaster event is currently running.</yellow>"
+reload-success: "%prefix%<green>Configurations and schedules reloaded successfully!</green>"
+
+gui:
+  title: "<gradient:#ff5555:#aa0000><bold>DisasterZ</bold></gradient> <dark_gray>| Master Control</dark_gray>"
+  active-badge: "<green><bold>[ACTIVE]</bold></green>"
+  warning-badge: "<gold><bold>[WARNING]</bold></gold>"
+  idle-badge: "<dark_gray>[IDLE]</dark_gray>"
+
